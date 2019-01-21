@@ -1,1 +1,17 @@
-c
+/* .body-section{
+    background : darkblue;
+    width:  600px;
+    height : 600px;
+    align: center;
+}
+ */
+
+
+.btn {
+    align-items : auto;
+    padding : 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 410px;
+
+}
