@@ -15,3 +15,14 @@
     margin-left: 410px;
 
 }
+
+.question {
+    text-align: center;
+    /* border-style: solid;
+    border: 3 3 3 3;
+    border-radius: 10px; */
+}
+
+#body {
+    text-align:  center;
+}
