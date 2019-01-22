@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
@@ -26,15 +26,23 @@
   <div class="jumbotron">
     <h1 class="text-center"> Trivial Game </h1>
     <br>
+ 
 
-    <button onclick= "countDown()" type="button" id="clickMe" class="btn btn-secondary"  >
-      Start
-    </button>
+   
   </div>
 
   <div id="body">
-  <div>
-    <p id="remTime"> Time Remaining: </p>
+
+
+      <!-- <form name="countDown" onsubmit = "return countDown()"> -->
+          <button  type="button" id="clickMe" class="btn btn-secondary" onclick = "countDown(9)" >
+            Start
+          </button>
+        <!-- </form> -->
+
+
+  <div id="remTime"> Time Remaining:
+    
   </div>
 
   <div id="results">Results</div>
@@ -101,9 +109,6 @@
            Submit
           </button>
 
-  <div id="scoreContainer" style="display : none;">
-    START QUIZ
-  </div>
 
 
 

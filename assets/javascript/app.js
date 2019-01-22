@@ -115,33 +115,59 @@ function onSubmit(){
     }
 
      
-  function countDown (secs, elem) {
-    var element = document.getElementById(elem);
+  
+
+// function countDown (secs, elem) {
+//     var element = document.getElementById(elem);
+
+//     element.innerHTML = "Time Remaining "+secs+" seconds"; 
+
+//     if (secs < 1) {
+//         clearTimeout(timer); 
+//         element.innerHTML = "<h2> Time out - GAME OVER! </h2>";
+//         element.innerHTML += onSubmit();
+//     }
+//     secs--; 
+//     var timer = setTimeout('countDown('+secs+',"'+elem+'")', 1000);
+    
+//     countDown(10, "remTime")
+
+// } 
+
+
+
+function countDown (secs, remTime) {
+    var element = document.getElementById("remTime");
 
     element.innerHTML = "Time Remaining "+secs+" seconds"; 
+
+
+    secs--; 
+    var timer = setTimeout('countDown('+secs+',"'+remTime+'")', 1000);
+
+
 
     if (secs < 1) {
         clearTimeout(timer); 
         element.innerHTML = "<h2> Time out - GAME OVER! </h2>";
-        element.innerHTML += onSubmit();
+         element.innerHTML += onSubmit();
     }
-    secs--; 
-    var timer = setTimeout('countDown('+secs+',"'+elem+'")', 1000);
     
+    // countDown(9)
+
 
 
 } 
 
-countDown(10, "remTime")
 
 
 
 
 
-//   function gameStart() {
-//       {alert ("Time Out")}
-//       onclick=setTimeout(onSubmit, 5000)
-//   }
+
+
+
+
 
 
 
